@@ -1,4 +1,4 @@
-# javascript-ddd-architecture
+# skeleton-js-ddd
 ### Ejemplo de arquitectura hexagonal
 
 ## Instalar docker
@@ -11,15 +11,15 @@ apt install docker.io docker-compose
 ## Cloná el repo e instalar dependencias
 
 ```
-git clone https://github.com/rody7val/javascript-ddd-architecture
-cd javascript-ddd-architecture
+git clone https://github.com/rody7val/skeleton-js-ddd
+cd skeleton-js-ddd
 docker-compose up -d
 npm install
 ```
 
 ## Crear tabla
 
-Identificá el nombre del contenedor, seguro es algo como "javascript-ddd-architecture_db_1":
+Identificá el nombre del contenedor, seguro es algo como "skeleton-js-ddd_db_1":
 
 ```bash
 docker-compose ps
