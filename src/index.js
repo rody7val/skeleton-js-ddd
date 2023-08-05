@@ -29,7 +29,6 @@ const UserRepositoryImpl = require('./infrastructure/user-repository-impl');
     async function update (id, data) {
       let user = await userService.updateUser(id, data);
       console.log("update(): ", `Usuario editado a: "${user.name}"`);
-      return process.exit()
     };
 
     async function deleted (id) {
