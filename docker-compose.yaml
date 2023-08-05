@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: mariadb
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    restart: unless-stopped
+    expose:
+      - '3306'
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=changeMe
+      - MYSQL_USER=changeMe
+      - MYSQL_PASSWORD=changeMe
+      - MYSQL_ROOT_PASSWORD=changeMe

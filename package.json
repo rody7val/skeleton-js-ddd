@@ -1,0 +1,17 @@
+{
+  "name": "skeleton-js-ddd",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
